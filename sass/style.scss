@@ -9,7 +9,7 @@ body {
     font-size: 16px;
     line-height: 1,7;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .navigation {
@@ -31,10 +31,15 @@ body {
     color: white;
 }
 
+.navbar-dark .navbar-brand {
+    color: #ffc107;
+    font-weight: 700;
+}
+
 .splash {
     height: 100vh;
     position: relative;
-    background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -43,8 +48,11 @@ body {
 }
 
 .splash-inner {
-    margin: auto;
-    max-width: 70%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
 }
 
 .page-title {
@@ -94,7 +102,7 @@ header {
 }
 
 .container {
-    margin: 20px;
+    max-width: 1200px;
     color:black;
     font-size: 16px;
 }
@@ -124,8 +132,7 @@ header {
 }
  
 .portfolio {
-    padding: 96px 10px 96px 60px;
-    margin: auto;
+    padding: 50px;
     background-color: #dee2e6;
     background-position: center center;
     background-size: cover;
@@ -149,10 +156,20 @@ header {
 
 footer i {
     font-size: 30px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+}
+
+footer p {
+    color: black;
+    position: relative;
+    top: 50%;
+}
+
+footer a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     background: gray;
     color: white;
     border-radius: 50%;
+    display: inline-block;
 }
