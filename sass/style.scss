@@ -52,7 +52,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    
+    transform: translate(-50%, -50%);
 }
 
 .page-title {
@@ -109,6 +109,7 @@ header {
 
 .container h1 {
     font-weight: 700;
+    font-size: 28px;
 }
 
 .container h2 {
@@ -146,12 +147,17 @@ header {
 
 .card {
     padding: auto;
+    margin: 20px;
 }
 
 .card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.portfolio .cards {
+    padding-bottom: 30px;
 }
 
 footer i {
@@ -172,4 +178,9 @@ footer a {
     color: white;
     border-radius: 50%;
     display: inline-block;
+}
+
+footer li {
+    font-size: 0;
+    display: inline; 
 }
